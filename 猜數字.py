@@ -27,11 +27,7 @@ while o > 0 :
             i = 0
             num = random.randint(1,20)
         elif yn == "n":
-            b = int(b)
-            a = int(a)
-            print("你總共猜了", b,"次")
-            print("你猜中過", a,"次")
-            print("平均每", b/a,"次猜中一次")
+            o = 0
     elif ans > num:
         print("太大了!!")
         i = i+1
@@ -45,5 +41,10 @@ while o > 0 :
         b = b+1
         print("你還可再猜",o, "次")
 if o == 0 :
-    print("遊戲結束，下次再來挑戰吧!")    
-
+    b = int(b)
+    a = int(a)
+    print("你總共猜了", b,"次")
+    print("你猜中過", a,"次")
+if a != 0:
+    print("平均每", b/a,"次猜中一次")
+print("遊戲結束，下次再來挑戰吧!")   
